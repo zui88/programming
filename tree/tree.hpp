@@ -7,9 +7,6 @@ using inod = mechanics::nod;
 
 class tree {
         public:
-                tree ();
-                ~tree();
-
                 // traversierung
                 void in_order_tree_walk(inod *x);
                 void pre_order_tree_walk(inod *x);
@@ -38,7 +35,7 @@ class tree {
                 inod *get_root();
 
         private:
-                mechanics *i_mech=nullptr;
+                mechanics i_mech;
 };
 
 #endif // __TREE_H_

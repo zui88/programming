@@ -1,19 +1,12 @@
 #include "tree.hpp"
 #include <iostream>
 
-tree::tree (){
-    this->i_mech = new mechanics;
-}
-tree::~tree(){
-    // TODO loeschen
-}
-
 inod *tree::gen_leave(){
     return new inod;
 }
 
 inod *tree::get_root(){
-    return this->i_mech->root;
+    return this->i_mech.root;
 }
 
 inod *tree::search(inod *x, int k){
@@ -87,12 +80,12 @@ void tree::post_order_tree_walk(inod *x){
     }
 }
 
-void tree::insert(mechanics::nod *z) {
+void tree::insert(inod *z) {
     // knoten, an dem eingefeugt werden soll
     inod *y = nullptr;
     // hilfsvariable
     //     ist wurzel
-    inod *x = this->i_mech->root;
+    inod *x = this->i_mech.root;
     // an unterste ebene eingefuegt
     while (x != nullptr){
         y = x;
@@ -108,13 +101,14 @@ void tree::insert(mechanics::nod *z) {
     //                     z.k > y.k -> rechts
     z->parent = y;
     if (y == nullptr)
-        this->i_mech->root = z; // neue wurzel
+        this->i_mech.root = z; // neue wurzel
     else if (z->key < y->key)
         y->left = z;
     else
         y->right = z;
 }
 
+// TODO
 void tree::tree_delete(inod *z){
 
 }

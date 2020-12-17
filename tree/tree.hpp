@@ -13,6 +13,7 @@ class tree {
                 void post_order_tree_walk(inod *x);
                 // modifikation
                 void insert(inod *z);
+
                 // TODO loeschen
                 void tree_delete(inod *z);
                 // anfrage

@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+# creates a backup
+# insert the name of the backup files that will created
+# just one argument shall be passed -> a file: string of the future backup
+if [ $# -eq 1 -a $1 ]
+then
+    date=`date +%Y_%m_%d`
+    # TODO search files in current directory
+    #     no hidden files
+    find . -type f ! -name ".*" > ./${1}-${date}.txt
+    # create archive gunzip (*.gz)
+    tar cfzT ${1}-${date}.tar.gz "./${1}-${date}.txt"
+    rm ./${1}-${date}.txt
+else
+    echo "nothing created -> false argument!\n"
+    exit
+fi
+

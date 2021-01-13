@@ -1,0 +1,3 @@
+C:/Users/Marco/Desktop/AsyncCommandQueue/cmake-build-debug/CMakeFiles/AsyncCommandQueue.dir
+C:/Users/Marco/Desktop/AsyncCommandQueue/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marco/Desktop/AsyncCommandQueue/cmake-build-debug/CMakeFiles/rebuild_cache.dir

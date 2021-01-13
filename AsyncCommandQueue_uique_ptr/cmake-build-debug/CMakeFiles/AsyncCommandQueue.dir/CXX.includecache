@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Marco/Desktop/AsyncCommandQueue/ascq.hpp
+memory
+-
+vector
+-
+thread
+-
+util.hpp
+C:/Users/Marco/Desktop/AsyncCommandQueue/util.hpp
+
+C:/Users/Marco/Desktop/AsyncCommandQueue/main.cpp
+chrono
+-
+iostream
+-
+ascq.hpp
+C:/Users/Marco/Desktop/AsyncCommandQueue/ascq.hpp
+
+C:/Users/Marco/Desktop/AsyncCommandQueue/util.hpp
+sstream
+-
+

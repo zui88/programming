@@ -1,0 +1,8 @@
+Alles was Code/Programmiern betrifft wird in diesem Repo aus
+durchgefuehrt. Projekte von Vorlesungen wie private sind auf hier zu
+finden. 
+
+- Uebungen sind in dedizierte Ordner untergebracht.
+- Das selbe trifft fuer Beispielsnippets zu.
+
+Preferierte Programmiersprachen sind: c, c++, python, elisp (Emacs-User).
